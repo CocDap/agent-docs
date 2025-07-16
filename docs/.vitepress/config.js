@@ -1,7 +1,7 @@
 export default {
     title: 'Polkadot Agent Kit',
     description: 'Make world more connected with XCM.',
-    base: '/docs/',
+    base: '/agent-docs/',
     head: [],
     themeConfig: {
         logo: '/ai_logo.png',
