@@ -1,0 +1,67 @@
+---
+title: Introduction
+description: "Polkadot Agent Kit"
+---
+
+## Overview
+Polkadot Agent Kit is a modular, open-source toolkit designed to simplify the development of agent-based applications and bots for the Polkadot ecosystem. It provides reusable components, utilities, and patterns for interacting with `Polkadot` and `Parachain` networks, supporting both core blockchain operations and higher-level agent logic.
+
+
+## Purposes 
+
+* Empower developers to build intelligent, automated agents and bots that interact with the Polkadot ecosystem.
+* Abstract away complexity of multi-chain operations, transaction management, and agent orchestration.
+* Lower the barrier for developers to build on Polkadot and foster a robust ecosystem of agent-based applications.
+
+
+## Key Features 
+
+<CardGroup cols={2}>
+  <Card
+    title="Substrate's Light Client Connection"
+    icon="palette"
+  >
+Connects to Polkadot, Kusama, and parachains via the Smoldot Light Client for decentralized, trustless network access without centralized RPCs.
+  </Card>
+  <Card
+    title="Wallet Management"
+    icon="code"
+  >
+    Provides a unified interface for managing multiple Polkadot-compatible wallets, including `Sr25519` and `Ed25519` key types.
+  </Card>
+  <Card
+    title="Cross-Chain Transactions"
+    icon="screwdriver-wrench"
+  >
+Facilitates token transfers and operations via XCM (Cross-Consensus Messaging) between Relay Chain, Asset Hub, and parachains.
+  </Card>
+</CardGroup>
+
+
+## Core Packages 
+
+| Package | Primary Responsibility | Key Dependencies |
+|---------|----------------------|------------------|
+| `@polkadot-agent-kit/sdk` | Public API interface | core, llm, common, @langchain/core |
+| `@polkadot-agent-kit/llm` | AI tool integration | core, common, @langchain/core |
+| `@polkadot-agent-kit/core` | Blockchain operations | common, polkadot-api, @paraspell/sdk |
+| `@polkadot-agent-kit/common` | Shared utilities | polkadot-api |
+
+
+## System Overview 
+
+The Polkadot Agent Kit follows a layered architecture with clear separation of concerns. The system is organized as a monorepo containing four core packages and supporting infrastructure.
+
+### High-Level Architecture
+
+<Frame>
+  <img src="/images/high-level-system.png" style="border-radius: 0.5rem;" />
+</Frame>
+
+### Core Architecture
+
+<Frame>
+  <img src="/images/core-architecture.png" style="border-radius: 0.5rem;" />
+</Frame>
+
+---
