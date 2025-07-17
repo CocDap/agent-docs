@@ -16,26 +16,14 @@ Polkadot Agent Kit is a modular, open-source toolkit designed to simplify the de
 
 ## Key Features 
 
-<CardGroup cols={2}>
-  <Card
-    title="Substrate's Light Client Connection"
-    icon="palette"
-  >
-Connects to Polkadot, Kusama, and parachains via the Smoldot Light Client for decentralized, trustless network access without centralized RPCs.
-  </Card>
-  <Card
-    title="Wallet Management"
-    icon="code"
-  >
-    Provides a unified interface for managing multiple Polkadot-compatible wallets, including `Sr25519` and `Ed25519` key types.
-  </Card>
-  <Card
-    title="Cross-Chain Transactions"
-    icon="screwdriver-wrench"
-  >
-Facilitates token transfers and operations via XCM (Cross-Consensus Messaging) between Relay Chain, Asset Hub, and parachains.
-  </Card>
-</CardGroup>
+### Substrate's Light Client Connection
+Connects to Polkadot, Kusama, and parachains via the `Smoldot Light Client` for decentralized, trustless network access without centralized RPCs.
+
+### Wallet Management
+Provides a unified interface for managing multiple Polkadot-compatible wallets, including `Sr25519` and `Ed25519` key types.
+
+### Cross-Chain Transactions
+Facilitates token transfers and operations via `XCM` (Cross-Consensus Messaging) between `Relay Chain`, `Asset Hub`, and `Parachains`.
 
 
 ## Core Packages 
