@@ -120,7 +120,7 @@ runBot();
 ```ts
 import { Telegraf } from "telegraf";
 import { setupHandlers } from "./handlers";
-import { PolkadotAgentKit } from "@polkadot-agent-kit/sdk";
+import { getLangChainTools, PolkadotAgentKit } from "@polkadot-agent-kit/sdk";
 import { ChatModelFactory, ChatModelOptions, ChatModelWithTools } from "./models";
 
 export class TelegramBot {
@@ -128,15 +128,10 @@ export class TelegramBot {
 
   async initialize() {
     await this.agent.initializeApi();
-    const checkBalance = this.agent.getNativeBalanceTool();
-    const transferNative = this.agent.transferNativeTool();
-    const xcmTransferNativeAsset = this.agent.xcmTransferNativeTool();
+    const tools = getLangChainTools(this.agent);
 
-    setupHandlers(this.bot, this.llm, {
-      checkBalance,
-      transferNative,
-      xcmTransferNativeAsset,
-    });
+    setupHandlers(this.bot, this.llm, tools);
+
   }
 
   public async start(): Promise<void> {

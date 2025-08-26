@@ -34,7 +34,7 @@ Facilitates token transfers and operations via `XCM` (Cross-Consensus Messaging)
 | `@polkadot-agent-kit/llm` | AI tool integration | core, common, @langchain/core |
 | `@polkadot-agent-kit/core` | Blockchain operations | common, polkadot-api, @paraspell/sdk |
 | `@polkadot-agent-kit/common` | Shared utilities | polkadot-api |
-
+| `@polkadot-agent-kit/mcp` | Model Context Protocol server | MCP server for AI assistant integration with complete Polkadot ecosystem toolset |
 
 ## System Overview 
 

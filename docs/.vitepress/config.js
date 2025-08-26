@@ -30,7 +30,9 @@ export default {
               { text: 'Token Tool', link: '/tools/token-tool' },
               { text: 'XCM Tool', link: '/tools/xcm-tool' },
               { text: 'NFT Tool', link: '/tools/nft-tool' },
-              { text: 'DeFi Tool', link: '/tools/defi-tool' }
+              { text: 'DeFi Tool', link: '/tools/defi-tool' },
+              { text: 'Nomination Staking Tool', link: '/tools/nomination-staking-tool' },
+              { text: 'Bifrost Tool', link: '/tools/bifrost-tool' }
             ]
           },
           {

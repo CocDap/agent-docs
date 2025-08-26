@@ -44,17 +44,7 @@ Replace `<recipient_address>` with the actual address you want to send tokens to
 
 ```ts
 const xcmTransferNative = agent.xcmTransferNativeTool();
-const txResult = await xcmTransferNative({
-  sourceChain: "polkadot",
-  destChain: "polkadot_asset_hub",
-  to: "<recipient_address>",
-  amount: "1"
-});
-console.log("XCM Transfer result:", txResult);
 ```
-
 ---
 
-## See Also
 
-- [Telegram Bot Example Overview](../examples/telegram-bot)

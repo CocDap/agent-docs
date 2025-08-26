@@ -20,19 +20,19 @@ The balance and transfer features are available out-of-the-box via the Polkadot 
 
 ---
 
-## Usage in Telegram
+## Usage
 
 ### Check Native Balance
 Prompt: 
 ```
-await client.prompt("check balance on polkadot")
+await agent.prompt("check balance on polkadot")
 ```
 
 ### Transfer Native Balance
 
 Prompt:
 ```
-await client.prompt("transfer 1 DOT to <recipient_address> on polkadot")
+await agent.prompt("transfer 1 DOT to <recipient_address> on polkadot")
 ```
 
 Replace `<recipient_address>` with the actual address you want to send tokens to.
@@ -42,39 +42,31 @@ Replace `<recipient_address>` with the actual address you want to send tokens to
 ## How It Works
 
 - **Balance Check:**
-  - The bot uses the `getNativeBalanceTool()` from the agent kit.
+  - The Agent uses the `getNativeBalanceTool()` from the Polkadot Agent Kit.
   - It parses your message, normalizes the chain name, and queries the balance for the agent's account.
 - **Transfer Native:**
-  - The bot uses the `transferNativeTool()` from the agent kit.
+  - The Agent uses the `transferNativeTool()` from the Polkadot Agent Kit.
   - It parses your message for amount, recipient, and chain, then initiates the transfer.
 
 ---
 
 ## Example Code
 
-### Check Balance Tool Usage
+### Get Check Balance Tool
 
 ```ts
 const checkBalance = agent.getNativeBalanceTool();
-const balance = await checkBalance({ chain: "polkadot" });
-console.log("Balance:", balance);
 ```
 
-### Transfer Native Tool Usage
+### Get Transfer Native Tool
 
 ```ts
 const transferNative = agent.transferNativeTool();
-const txResult = await transferNative({
-  chain: "polkadot",
-  to: "<recipient_address>",
-  amount: "1"
-});
-console.log("Transfer result:", txResult);
 ```
 
 ---
 
-## See Also
+## See Also 
 
 - [Telegram Bot Example Overview](../examples/telegram-bot)
 

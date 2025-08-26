@@ -1,8 +1,8 @@
-# POlkadot Agent Kit SDK documentation
+# Polkadot Agent Kit SDK documentation
 
 
 
-Live version - [ official docs]() 
+Live version - [ official docs](https://cocdap.github.io/agent-docs/) 
 
 For development of documentation
 ```

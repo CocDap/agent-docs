@@ -24,23 +24,26 @@ The Polkadot Agent Kit SDK provides a set of tools to help you build agents that
 <CodeGroup>
 
 ```typescript
-  import { PolkadotAgentKit } from '@polkadot-agent-kit/sdk';
+import { PolkadotAgentKit } from '@polkadot-agent-kit/sdk';
 
-  // Define the Polkadot Agent Kit API
-  const agent = new PolkadotAgentKit(<your private key>, {
-      keyType: "Sr25519", // "Ed25519", "Ecdsa"
-  });
-  // Initialize the Polkadot Agent Kit API to connect to the Polkadot network
-  agent.initializeApi();
+// Initialize the Polkadot Agent Kit with your credentials
+const agent = new PolkadotAgentKit({
+  privateKey: "your-private-key-here",
+  keyType: "Sr25519", // Options: "Sr25519", "Ed25519", "Ecdsa"
+});
 
-  // Set up tools
-  // Get balance of agent account
-  const checkBalance = agent.getNativeBalanceTool();
-  // Transfer native tokens to a recipient address on a specific chain.
-  const transferNative = agent.transferNativeTool();
-  // Transfer native tokens to a recipient address on a specific chain via xcm.
-  const xcmTransferNativeAsset = agent.xcmTransferNativeTool();
+// Connect to the Polkadot network
+await agent.initializeApi();
 
+// Option 1: Get specific tools individually
+const balanceTool = agent.getNativeBalanceTool();
+const transferTool = agent.transferNativeTool();
+const xcmTransferTool = agent.xcmTransferNativeTool();
+
+// Option 2: Get all available tools at once
+const allTools = agent.getLangChainTools();
+
+// Now you can use these tools with your AI agent or LangChain
 ```
 
 </CodeGroup>
@@ -52,3 +55,5 @@ The Polkadot Agent Kit SDK provides a set of tools to help you build agents that
 - **[XCM Tool API](/tools/xcm-tool)** - Cross-chain messaging operations for transferring assets and data
 - **[NFT Tool API](/tools/nft-tool)** - NFT management and operations including minting and transferring
 - **[DEFI Tool API](/tools/defi-tool)** - DeFi operations including liquidity provision and yield farming
+- **[Nomination Staking Tool API](/tools/nomination-staking-tool)** - Nomination pool management and staking operations
+- **[Bifrost Tool API](/tools/bifrost-tool)** - Bifrost parachain operations including liquid staking and cross-chain functionality
