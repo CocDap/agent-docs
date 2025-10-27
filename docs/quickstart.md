@@ -53,7 +53,6 @@ const allTools = agent.getLangChainTools();
 
 - **[Token Tool API](/tools/token-tool)** - Manage and interact with tokens across the Polkadot ecosystem
 - **[XCM Tool API](/tools/xcm-tool)** - Cross-chain messaging operations for transferring assets and data
-- **[NFT Tool API](/tools/nft-tool)** - NFT management and operations including minting and transferring
 - **[DEFI Tool API](/tools/defi-tool)** - DeFi operations including liquidity provision and yield farming
 - **[Nomination Staking Tool API](/tools/nomination-staking-tool)** - Nomination pool management and staking operations
 - **[Bifrost Tool API](/tools/bifrost-tool)** - Bifrost parachain operations including liquid staking and cross-chain functionality
