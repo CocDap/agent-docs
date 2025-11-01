@@ -49,6 +49,7 @@ const allTools = agent.getLangChainTools();
 </CodeGroup>
 
 
+
 ## Tools Call API Navigation  
 
 - **[Token Tool API](/tools/token-tool)** - Manage and interact with tokens across the Polkadot ecosystem
@@ -56,3 +57,9 @@ const allTools = agent.getLangChainTools();
 - **[DEFI Tool API](/tools/defi-tool)** - DeFi operations including liquidity provision and yield farming
 - **[Nomination Staking Tool API](/tools/nomination-staking-tool)** - Nomination pool management and staking operations
 - **[Bifrost Tool API](/tools/bifrost-tool)** - Bifrost parachain operations including liquid staking and cross-chain functionality
+
+
+## Full Examples 
+- **[Telegram Bot](/examples/telegram-bot)** - Natural language Telegram bot for token transfers, balance checks, and XCM operations
+- **[MCP Server](/examples/mcp-server)** - Model Context Protocol server exposing Polkadot Agent Kit tools for AI agents and LLM applications
+- **[Polkadot Agent Playground](/examples/playground)** - Interactive playground for testing and exploring Polkadot Agent Kit capabilities

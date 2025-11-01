@@ -38,7 +38,8 @@ export default {
             text: 'Examples',
             items: [
               { text: 'Telegram Bot', link: '/examples/telegram-bot' },
-              { text: 'MCP', link: '/examples/mcp-server' }
+              { text: 'MCP', link: '/examples/mcp-server' },
+              { text: 'Polkadot Agent Playground', link: '/examples/playground' }
             ]
           }
         ]
