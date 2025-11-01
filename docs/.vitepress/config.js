@@ -1,6 +1,6 @@
 export default {
     title: 'Polkadot Agent Kit',
-    description: 'Make world more connected with XCM.',
+    description: 'Make agent more simple',
     base: '/agent-docs/',
     head: [],
     themeConfig: {
@@ -29,7 +29,6 @@ export default {
             items: [
               { text: 'Token Tool', link: '/tools/token-tool' },
               { text: 'XCM Tool', link: '/tools/xcm-tool' },
-              { text: 'NFT Tool', link: '/tools/nft-tool' },
               { text: 'DeFi Tool', link: '/tools/defi-tool' },
               { text: 'Nomination Staking Tool', link: '/tools/nomination-staking-tool' },
               { text: 'Bifrost Tool', link: '/tools/bifrost-tool' }
@@ -38,7 +37,8 @@ export default {
           {
             text: 'Examples',
             items: [
-              { text: 'Telegram Bot', link: '/examples/telegram-bot' }
+              { text: 'Telegram Bot', link: '/examples/telegram-bot' },
+              { text: 'MCP', link: '/examples/mcp-server' }
             ]
           }
         ]
